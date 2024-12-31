@@ -4,6 +4,153 @@
     padding: 0;
     box-sizing: border-box;
 }
-ul li{
-    text-decoration: none;
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* 전체 레이아웃 */
+.container{
+    margin: 100px auto;
+    width: 1200px;
+    height: 700px;
+    background-color: aqua;
+}
+/* 상단 */
+.header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+    /* border: 1px solid #333; */
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 100%;
+    /* border: 1px solid #333; */
+    border-right: 0.5px dotted;
+    text-align: center;
+    line-height: 100px;
+}
+/* 메뉴 */
+nav{
+    position: relative;
+    float: right;
+    width: 1000px;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+#top_menu{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 550px;
+    height: 60px;
+    background-color: white;
+}
+#top_menu li{
+    float: left;
+    width: calc(100% / 4);
+    text-align: center;
+    line-height: 60px;
+    border-right: 1px solid #333;
+}
+#top_menu li a{
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+}
+#top_menu li:last-child{
+    border: none;
+}
+/* 메뉴 호버 */
+#top_menu li:hover{
+    background-color: black;
+}
+#top_menu li:hover a{
+    color: white;
+    font-weight: bold;
+}
+/* 메인 */
+.main{
+    width: 100%;
+    height: 500px;
+    background-color: aquamarine;
+}
+/* 메인 상단 */
+.main_top{
+    width: 100%;
+    height: 300px;
+    background-color: cadetblue;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 400px;
+}
+/* 메인 하단 */
+.main_bottom{
+    width: 100%;
+    height: 200px;
+    background-color: blueviolet;
+}
+/* 메인 하단 왼쪽 */
+.mb_left{
+    float: left;
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: violet;
+}
+.mb_left, .mb_center, .mb_right h2{
+    text-align: center;
+    line-height: 200px;
+}
+/* 메인 하단 중앙 */
+.mb_center{
+    float: left;
+    width: calc(100% / 3);
+    background-color: brown;
+    height: 100%
+    
+}
+/* 메인 하단 오른쪽 */
+.mb_right{
+    float: left;
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: chartreuse;
+}
+/* 하단 */
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: silver;
+}
+/* 하단 왼쪽 */
+.footer_left{
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: red;
+}
+/* 하단 중앙 */
+.footer_center{
+    float: left;
+    width: 800px;
+    height: 100%;
+    background-color: green;
+}
+/* 하단 오른쪽 */
+.footer_right{
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: blue;
+}
+.footer_left, .footer_center, .footer_right h2{
+    text-align: center;
+    line-height: 100px;
 }
